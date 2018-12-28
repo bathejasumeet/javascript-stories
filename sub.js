@@ -10,5 +10,5 @@ function sub(...args) {
   args.forEach(ele => {
     if ("number" !== typeof ele) throw "Invalid type of parameters, all parameters should be a number";
   })
-  return args.length == 1 ? args[0] : (args[0] - args.slice(1).reduce((a, b) => a + b))
+  return args.length == 1 ? args[0] : (args[0] - args.slice(1).reduce((a, b) => a + b));
 }
